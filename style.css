@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* body {
+    max-width: 1400px;
+    overflow-x: hidden;
+} */
+
+:root {
+    --blue-button: #000066;
+    --blue-title: #0A60FF;
+    --blue-title-strong: #000067;
+    --blue-select: #0000FE;
+    --orange: #FF6633;
+    --grey: #808080;
+    --grey-black: #404040;
+    --grey-footer: #EFEFEF;
+    --black: #101010;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+    margin-left: 20px;
+}
+
+#barranav, .atalhos {
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 500;
+
+}
+
+#bottonproduto, #dropdownMenuButton1 {
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 500;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.atalhos {
+    margin-right: 10px;
+}
+
+.textinho {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.dropdown-menu {
+    width: 480px;
+}
+.dropdown {
+    display: inline-block; /* deixa o LO do "tamanho do próprio texto" e não da largura inteira da tela*/
+    list-style: none; /* rita a "bolinha" do LI*/
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    transform: translate3d(5px, 28px, 0px); /* distancia entre menu e btn */
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+
+.navbar-toggler {
+    z-index: 5;
+}
+
+.faleconosco {
+    background-color: #000066 !important;
+    color: white !important;
+    border-radius: 9px !important;
+    right: 0;
+    position: absolute;
+
+}
+
+.form-image {
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* background: url(./assets/1920x720.png); */
+    background-repeat: repeat-x;
+}
+
+.celular {
+    margin: 9% 0 0 -7%;
+    width: 40%;
+    height: 70%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    z-index: 4;
+}
+
+#line-container {
+    left: 0rem;
+    top: 1rem;
+    position: absolute;
+    margin-top: 17%;
+}
+
+.content-container {
+    position: absolute;
+    top: 15%;
+    z-index: 4;
+    left: 4%;
+    padding: 2%;
+}
+
+.animation {
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    transition: ease-in-out;
+
+}
+
+@keyframes textAnimation {
+    from {
+        margin-left: -200px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+
+}
+
+#zvox {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2.625rem;
+    margin-top: 17%;
+}
+
+#solutions {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 169%;
+}
+
+#phase-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.25rem;
+    width: 70%;
+}
+
+.button-container {
+    width: 12rem;
+    border-radius: 0.625rem;
+}
+
+.button {
+    background-color: #000066;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+
+}
+
+.button a {
+    color: white;
+}
+
+.produtos {
+    margin-bottom: 80px;
+}
+
+.tituloproduto {
+    margin-left: 3%;
+    color: var(--blue-title);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 270%;
+
+}
+
+.textoprincipal {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 154% !important;
+    max-width: 500px;
+    margin-left: 3%;
+}
+
+.senhora {
+    width: 41%;
+    display: flex;
+    position: relative;
+    margin-top: -67px;
+}
+
+.jovem {
+    transform: rotateX(180deg);
+    width: 46%;
+    display: flex;
+    position: absolute;
+    margin-top: -67px;
+    float: right;
+    top: 2056px;
+    right: 0;
+}
+
+.container-fluid {
+    margin-left: -12px !important;
+}
+
+.tituloproduto2 {
+    margin-left: -12%;
+    color: var(--blue-title);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 270%;
+    position: relative;
+    bottom: 227px;
+}
+
+.textoprincipal2 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 63% !important;
+    max-width: 500px;
+    margin-left: 3%;
+    color: #101010;
+}
+
+.bloco2 {
+    display: -webkit-inline-box;
+}
+
+.services {
+    width: 805px;
+    margin-left: 3%;
+}
+
+.services h3 {
+    color: var(--blue-title);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.services p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--grey-black);
+    width: 60%;
+    font-size: 80%;
+
+}
+
+.rodape {
+    padding-top: 14px;
+}
+.endereço .me-3{
+    margin-right: 0px;
+
+}
+
+
+
+@media (max-width: 862px) {
+    .atalhos {
+        padding: 3%;
+    }
+
+    #solutions {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 137%;
+    }
+
+    #line-container {
+        left: -12px;
+    }
+
+    .senhora {
+        display: none;
+    }
+
+    .jovem {
+        display: none;
+    }
+
+    .form-image {
+        width: 100%;
+        display: flex;
+        position: relative;
+        background: none;
+        background-repeat: repeat-x;
+    }
+
+    .textoprincipal {
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        /* padding-top: 10px;
+        font-weight: 400;
+        font-size: 154% !important;
+        max-width: 501px;
+        margin-left: 3%; */
+        text-align: center;
+    }
+
+    .produtos {
+        margin-bottom: 0px;
+    }
+
+    .tituloproduto {
+        margin-left: 0%;
+        color: var(--blue-title);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 270%;
+        text-align: center;
+    }
+
+    .content-container {
+        position: absolute;
+        top: -13%;
+        z-index: 4;
+        left: 4%;
+        padding: 4%;
+    }
+
+    .services {
+        padding: 8px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .services p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: var(--grey-black);
+        width: 100%;
+        font-size: 80%;
+    }
+
+    .button {
+        background-color: #000066;
+        border-radius: 5px;
+        width: 120px;
+        text-align: center;
+        margin-top: -35px;
+    }
+
+    .celular {
+        display: none;
+    }
+}
+
+@media (min-width: 1900px) {
+
+
+    #zvox {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 700%;
+        margin-top: 17%;
+    }
+
+    #solutions {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 350%;
+    }
+
+    #phase-container {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 200%;
+        width: 66%;
+    }
+    .content-container {
+        position: absolute;
+        top: 0%;
+        z-index: 4;
+        left: 4%;
+        padding: 2%;
+    }
+    
+    .tituloproduto {
+        margin-left: 3%;
+        color: var(--blue-title);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 700%;
+    }
+    
+    .textoprincipal {
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 10px;
+        font-weight: 400;
+        font-size: 350% !important;
+        max-width: 1000px;
+        margin-left: 3%;
+    }
+    
+    .senhora {
+        width: 67%;
+        display: flex;
+        position: relative;
+        margin-top: -273px
+    }
+    
+    .services p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: var(--grey-black);
+        width: 105%;
+        font-size: 175%;
+    }
+    
+    .jovem {
+        transform: rotateX(180deg);
+        width: 56%;
+        display: flex;
+        position: absolute;
+        margin-top: -67px;
+        float: right;
+        top: 3150px;
+        right: 0;
+    }
+
+}
+
+@media (min-width: 2450px) {
+    .jovem {
+        transform: rotateX(180deg);
+        width: 46%;
+        display: flex;
+        position: absolute;
+        margin-top: -67px;
+        float: right;
+        top: 3150px;
+        right: 0;
+    }
+
+}
